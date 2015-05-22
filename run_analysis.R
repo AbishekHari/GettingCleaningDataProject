@@ -25,7 +25,7 @@ masterDataSet$PerformedActivity <- factor(masterDataSet$PerformedActivity, activ
 #          individual datasets (train and test)
 
 # Step 5
-tidyDataSet <- ddply(masterDataSet, .(PerformedActivity, Subject), numcolwise(mean))
+tidyDataSet <- ddply(masterDataSet, .(Subject, PerformedActivity), numcolwise(mean))
 write.table(tidyDataSet, file="tidy.txt", row.name=F)
 
 ######################### HELPER FUNCTIONS #####################################
