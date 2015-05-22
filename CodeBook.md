@@ -53,7 +53,7 @@ If the file doenst exist, the processing stops by issuing error message and else
 8. Activity Id in the "masterDataSet" are given appropriate label names by converting them into factors  
 9. A tidyDataSet is created by calculating  the average of each measurement for each activity and each subject. The dimensions of this data frame are (180 X 68).  
 10. The tidyDataSet is written to a text file "tidy.txt" by excluding the rownames
-11. Variable units of masterDataSet and tidyDataSet  
-  + Subject who performed the activity is int  
-  + PerformedActivity is a Factor  
-  + All other variables (mean, std #66) are of type numeric
+11. Units for variables in masterDataSet and tidyDataSet  
+  + Subject who performed the activity - int  
+  + PerformedActivity                  - Factor  
+  + All other variables (mean, std)    - numeric
